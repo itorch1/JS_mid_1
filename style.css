@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+:root{
+    --bg-color: #eee;
+    --primary-color: #3e89bb;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--bg-color);
+}
+.container{
+    width: 550px;
+    margin: 0 auto;
+}
+header{
+    margin: 20px 0 10px;
+    text-align: center;
+}
+header h1{
+    font-weight: 100;
+    font-size: 40px;
+}
+header i{
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+header span{
+    color: var(--primary-color);
+}
+#alert{
+    padding: 10px 20px;
+    color: #fff;
+    opacity: 0;
+    min-width: 200px;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    transform: translateX(-100%);
+    transition: 1s;
+}
+input, form button{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px #ccc solid;
+}
+label{
+    display: inline-block;
+    margin-bottom: 3px;
+}
+form button{
+    font-family: inherit;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 0;
+}
+#books{
+    margin-top: 50px;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+}
+table tr{
+    border-top: 1px #ccc solid;
+}
+table tbody tr:nth-child(odd){
+    background-color: #ddd;
+}
+table th{
+    text-align: left;
+}
+table th, table td{
+    height: 50px;
+    width: 25%;
+    padding-left: 10px;
+}
+table button{
+    border: none;
+    background-color:rgb(250, 65, 41);
+    padding: 8px;
+    color: #fff;
+    cursor: pointer;
+}
+

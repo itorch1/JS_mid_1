@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>BookList App</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-book-open fa-lg"></i>My<span>Book</span>List</h1>
+        </header>
+
+        <div id="alert">Book Added!</div>
+
+        <form>
+            <label for="title">Title</label>
+            <input type="text" id="title" class="form-control">
+
+            <label for="author">Author</label>
+            <input type="text" id="author" class="form-control">
+
+            <label for="isbn">ISBN#</label>
+            <input type="text" id="isbn" class="form-control">
+
+            <button>Add Book</button>
+        </form>
+
+        <table id="books">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
